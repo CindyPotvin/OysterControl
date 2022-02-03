@@ -1,0 +1,756 @@
+EESchema Schematic File Version 4
+LIBS:OysterControl-cache
+EELAYER 29 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2021-03-07"
+Rev ""
+Comp "Cindy Potvin"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 8225 2500 0    60   ~ 0
+A0
+Text Label 8225 2600 0    60   ~ 0
+A1
+Text Label 8225 2700 0    60   ~ 0
+A2
+Text Label 8225 2800 0    60   ~ 0
+A3
+Text Label 8225 2900 0    60   ~ 0
+A4(SDA)
+Text Label 8225 3000 0    60   ~ 0
+A5(SCL)
+Text Label 9875 3000 0    60   ~ 0
+0(Rx)
+Text Label 9875 2800 0    60   ~ 0
+2
+Text Label 9875 2900 0    60   ~ 0
+1(Tx)
+Text Label 9875 2700 0    60   ~ 0
+3(MIST)
+Text Label 9875 2600 0    60   ~ 0
+4
+Text Label 9875 2500 0    60   ~ 0
+5(**)
+Text Label 9875 2400 0    60   ~ 0
+6(**)
+Text Label 9875 2300 0    60   ~ 0
+7
+Text Label 9875 2100 0    60   ~ 0
+8
+Text Label 9875 2000 0    60   ~ 0
+9(**)
+Text Label 9875 1900 0    60   ~ 0
+10(**/SS)
+Text Label 9875 1800 0    60   ~ 0
+11(FAN)
+Text Label 9875 1700 0    60   ~ 0
+12(LED)
+Text Label 9875 1600 0    60   ~ 0
+13(SCK)
+Text Label 9875 1400 0    60   ~ 0
+AREF
+Text Notes 7875 750  0    60   ~ 0
+Shield for Arduino that uses\nthe same pin disposition\nlike "Uno" board Rev 3.
+$Comp
+L Connector_Generic:Conn_01x08 P1
+U 1 1 56D70129
+P 8925 1900
+F 0 "P1" H 8925 2350 50  0000 C CNN
+F 1 "Power" V 9025 1900 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" V 9075 1900 20  0000 C CNN
+F 3 "" H 8925 1900 50  0000 C CNN
+	1    8925 1900
+	1    0    0    -1  
+$EndComp
+Text Label 7975 1800 0    60   ~ 0
+Reset
+$Comp
+L power:GND #PWR03
+U 1 1 56D70CC2
+P 8625 3150
+F 0 "#PWR03" H 8625 2900 50  0001 C CNN
+F 1 "GND" H 8625 3000 50  0000 C CNN
+F 2 "" H 8625 3150 50  0000 C CNN
+F 3 "" H 8625 3150 50  0000 C CNN
+	1    8625 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 56D70CFF
+P 9625 3150
+F 0 "#PWR04" H 9625 2900 50  0001 C CNN
+F 1 "GND" H 9625 3000 50  0000 C CNN
+F 2 "" H 9625 3150 50  0000 C CNN
+F 3 "" H 9625 3150 50  0000 C CNN
+	1    9625 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 P2
+U 1 1 56D70DD8
+P 8925 2700
+F 0 "P2" H 8925 2300 50  0000 C CNN
+F 1 "Analog" V 9025 2700 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x06" V 9075 2750 20  0000 C CNN
+F 3 "" H 8925 2700 50  0000 C CNN
+	1    8925 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 P4
+U 1 1 56D7164F
+P 9325 2600
+F 0 "P4" H 9325 2100 50  0000 C CNN
+F 1 "Digital" V 9425 2600 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" V 9475 2550 20  0000 C CNN
+F 3 "" H 9325 2600 50  0000 C CNN
+	1    9325 2600
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	7850 825  9250 825 
+Wire Wire Line
+	8675 1700 8725 1700
+Wire Wire Line
+	8725 1900 8475 1900
+Wire Wire Line
+	8725 2100 8625 2100
+Wire Wire Line
+	8725 2200 8625 2200
+Connection ~ 8625 2200
+Wire Wire Line
+	8725 2500 8225 2500
+Wire Wire Line
+	8725 2600 8225 2600
+Wire Wire Line
+	8725 2700 8225 2700
+Wire Wire Line
+	8725 2800 8225 2800
+Wire Wire Line
+	8725 2900 8225 2900
+Wire Wire Line
+	8725 3000 8225 3000
+$Comp
+L Connector_Generic:Conn_01x10 P3
+U 1 1 56D721E0
+P 9325 1600
+F 0 "P3" H 9325 2150 50  0000 C CNN
+F 1 "Digital" V 9425 1600 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x10" V 9475 1600 20  0000 C CNN
+F 3 "" H 9325 1600 50  0000 C CNN
+	1    9325 1600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9525 2100 9875 2100
+Wire Wire Line
+	9525 2000 9875 2000
+Wire Wire Line
+	9525 1900 9875 1900
+Wire Wire Line
+	9525 1800 9875 1800
+Wire Wire Line
+	9525 1700 9875 1700
+Wire Wire Line
+	9525 1600 9875 1600
+Wire Wire Line
+	9525 1400 9875 1400
+Wire Wire Line
+	9525 3000 9875 3000
+Wire Wire Line
+	9525 2900 9875 2900
+Wire Wire Line
+	9525 2800 9875 2800
+Wire Wire Line
+	9525 2700 9875 2700
+Wire Wire Line
+	9525 2600 9875 2600
+Wire Wire Line
+	9525 2500 9875 2500
+Wire Wire Line
+	9525 2400 9875 2400
+Wire Wire Line
+	9525 2300 9875 2300
+Wire Wire Line
+	9525 1500 9625 1500
+Wire Wire Line
+	9625 1500 9625 3150
+Wire Wire Line
+	8625 2100 8625 2200
+Wire Wire Line
+	8625 2200 8625 3150
+Wire Notes Line
+	7825 3450 10525 3450
+Wire Wire Line
+	8725 1800 7975 1800
+Text Notes 9025 1600 0    60   ~ 0
+1
+NoConn ~ 8225 2500
+NoConn ~ 9875 2600
+NoConn ~ 9875 2500
+NoConn ~ 9875 2400
+NoConn ~ 9875 2300
+NoConn ~ 9875 2100
+NoConn ~ 9875 2000
+NoConn ~ 9875 1900
+Text Notes 7875 1025 0    50   ~ 0
+Digital 4-10 and analog 0 used \nby the keypad shield.\n
+Wire Notes Line
+	9250 1050 7825 1050
+Wire Notes Line
+	9250 475  9250 1050
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FECFE6A
+P 1250 2600
+F 0 "J1" V 1122 2680 50  0000 L CNN
+F 1 "Mister control" V 1213 2680 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1250 2600 50  0001 C CNN
+F 3 "~" H 1250 2600 50  0001 C CNN
+	1    1250 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:IRF520NSTRLPBF Q1
+U 1 1 5FED89E0
+P 1975 2800
+F 0 "Q1" H 2405 2946 50  0000 L CNN
+F 1 "IRL520NSTRLPBF" V 2575 2650 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2425 2750 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF520NS-DS-v01_00-EN.pdf?fileId=5546d46258fc0bc10158fee31fe50635" H 2425 2650 50  0001 L CNN
+F 4 "HEXFET N-Ch Power MOSFET 9.7A 100V D2PAK Infineon IRF520NSTRLPBF N-channel MOSFET Transistor, 9.7 A, 100 V, 3-Pin D2PAK" H 2425 2550 50  0001 L CNN "Description"
+F 5 "4" H 2425 2450 50  0001 L CNN "Height"
+F 6 "942-IRF520NSTRLPBF" H 2425 2350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Infineon-IR/IRF520NSTRLPBF?qs=9%252BKlkBgLFf3zOOMwLfNckA%3D%3D" H 2425 2250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Infineon" H 2425 2150 50  0001 L CNN "Manufacturer_Name"
+F 9 "IRF520NSTRLPBF" H 2425 2050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1975 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FED9C28
+P 1975 3125
+F 0 "R1" V 2075 3150 50  0000 L CNN
+F 1 "2k" V 2075 3000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1905 3125 50  0001 C CNN
+F 3 "~" H 1975 3125 50  0001 C CNN
+	1    1975 3125
+	1    0    0    -1  
+$EndComp
+Text Label 1975 2900 0    60   ~ 0
+3(MIST)
+$Comp
+L power:GND #PWR018
+U 1 1 5FEE376A
+P 2650 875
+F 0 "#PWR018" H 2650 625 50  0001 C CNN
+F 1 "GND" H 2650 725 50  0000 C CNN
+F 2 "" H 2650 875 50  0000 C CNN
+F 3 "" H 2650 875 50  0000 C CNN
+	1    2650 875 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1575 2500 1500 2500
+Wire Wire Line
+	1450 2600 1450 3025
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5FEFBC80
+P 975 1075
+F 0 "J2" V 847 1155 50  0000 L CNN
+F 1 "Input power 24V" H 650 850 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 975 1075 50  0001 C CNN
+F 3 "~" H 975 1075 50  0001 C CNN
+	1    975  1075
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5FF0211E
+P 1300 1075
+F 0 "#FLG01" H 1300 1150 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 1248 50  0000 C CNN
+F 2 "" H 1300 1075 50  0001 C CNN
+F 3 "~" H 1300 1075 50  0001 C CNN
+	1    1300 1075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1175 975  1300 975 
+Wire Wire Line
+	1175 1075 1300 1075
+Connection ~ 1300 1075
+Wire Wire Line
+	1300 1075 1425 1075
+Text Label 1350 1075 0    50   ~ 0
++24V
+$Comp
+L power:GND #PWR012
+U 1 1 5FF06B59
+P 1425 975
+F 0 "#PWR012" H 1425 725 50  0001 C CNN
+F 1 "GND" H 1425 825 50  0000 C CNN
+F 2 "" H 1425 975 50  0000 C CNN
+F 3 "" H 1425 975 50  0000 C CNN
+	1    1425 975 
+	0    -1   -1   0   
+$EndComp
+Text Label 1450 2775 3    50   ~ 0
++24V
+$Comp
+L power:GND #PWR014
+U 1 1 5FF2D3C5
+P 1975 3425
+F 0 "#PWR014" H 1975 3175 50  0001 C CNN
+F 1 "GND" H 1975 3275 50  0000 C CNN
+F 2 "" H 1975 3425 50  0000 C CNN
+F 3 "" H 1975 3425 50  0000 C CNN
+	1    1975 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1975 2800 1975 2975
+Wire Wire Line
+	1975 3275 1975 3425
+NoConn ~ 2650 1075
+NoConn ~ 2650 975 
+$Comp
+L power:GND #PWR015
+U 1 1 5FF51614
+P 2175 2500
+F 0 "#PWR015" H 2175 2250 50  0001 C CNN
+F 1 "GND" H 2175 2350 50  0000 C CNN
+F 2 "" H 2175 2500 50  0000 C CNN
+F 3 "" H 2175 2500 50  0000 C CNN
+	1    2175 2500
+	0    -1   -1   0   
+$EndComp
+Text Label 2800 1175 3    50   ~ 0
++5V
+$Comp
+L Device:R R2
+U 1 1 5FF6498E
+P 2325 4775
+F 0 "R2" V 2425 4800 50  0000 L CNN
+F 1 "2k" V 2425 4650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2255 4775 50  0001 C CNN
+F 3 "~" H 2325 4775 50  0001 C CNN
+	1    2325 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5FF64999
+P 2325 5075
+F 0 "#PWR016" H 2325 4825 50  0001 C CNN
+F 1 "GND" H 2325 4925 50  0000 C CNN
+F 2 "" H 2325 5075 50  0000 C CNN
+F 3 "" H 2325 5075 50  0000 C CNN
+	1    2325 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 4450 2325 4625
+Wire Wire Line
+	2325 4925 2325 5075
+$Comp
+L power:GND #PWR019
+U 1 1 5FF649A5
+P 2525 4150
+F 0 "#PWR019" H 2525 3900 50  0001 C CNN
+F 1 "GND" H 2525 4000 50  0000 C CNN
+F 2 "" H 2525 4150 50  0000 C CNN
+F 3 "" H 2525 4150 50  0000 C CNN
+	1    2525 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1825 4450 1575 4450
+Text Label 1775 4450 2    50   ~ 0
++5V
+Text Label 2450 6075 0    60   ~ 0
+11(FAN)
+Text Label 2325 4550 0    60   ~ 0
+12(LED)
+$Comp
+L SamacSys_Parts:IRF520NSTRLPBF Q3
+U 1 1 5FF9989A
+P 2450 5975
+F 0 "Q3" H 2880 6121 50  0000 L CNN
+F 1 "IRL520NSTRLPBF" V 3025 5750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2900 5925 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF520NS-DS-v01_00-EN.pdf?fileId=5546d46258fc0bc10158fee31fe50635" H 2900 5825 50  0001 L CNN
+F 4 "HEXFET N-Ch Power MOSFET 9.7A 100V D2PAK Infineon IRF520NSTRLPBF N-channel MOSFET Transistor, 9.7 A, 100 V, 3-Pin D2PAK" H 2900 5725 50  0001 L CNN "Description"
+F 5 "4" H 2900 5625 50  0001 L CNN "Height"
+F 6 "942-IRF520NSTRLPBF" H 2900 5525 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Infineon-IR/IRF520NSTRLPBF?qs=9%252BKlkBgLFf3zOOMwLfNckA%3D%3D" H 2900 5425 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Infineon" H 2900 5325 50  0001 L CNN "Manufacturer_Name"
+F 9 "IRF520NSTRLPBF" H 2900 5225 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2450 5975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FF998A4
+P 2450 6300
+F 0 "R3" V 2550 6325 50  0000 L CNN
+F 1 "2k" V 2550 6175 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2380 6300 50  0001 C CNN
+F 3 "~" H 2450 6300 50  0001 C CNN
+	1    2450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5FF998AE
+P 2450 6600
+F 0 "#PWR017" H 2450 6350 50  0001 C CNN
+F 1 "GND" H 2450 6450 50  0000 C CNN
+F 2 "" H 2450 6600 50  0000 C CNN
+F 3 "" H 2450 6600 50  0000 C CNN
+	1    2450 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5975 2450 6150
+Wire Wire Line
+	2450 6450 2450 6600
+$Comp
+L power:GND #PWR020
+U 1 1 5FF998BA
+P 2650 5675
+F 0 "#PWR020" H 2650 5425 50  0001 C CNN
+F 1 "GND" H 2650 5525 50  0000 C CNN
+F 2 "" H 2650 5675 50  0000 C CNN
+F 3 "" H 2650 5675 50  0000 C CNN
+	1    2650 5675
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1975 5675
+Wire Wire Line
+	1975 5675 2050 5675
+$Comp
+L Device:R R4
+U 1 1 5FFEF476
+P 4175 925
+F 0 "R4" V 4275 950 50  0000 L CNN
+F 1 "2k7" V 4275 800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4105 925 50  0001 C CNN
+F 3 "~" H 4175 925 50  0001 C CNN
+	1    4175 925 
+	0    1    1    0   
+$EndComp
+Text Label 4025 925  2    60   ~ 0
+A4(SDA)
+Text Label 4325 925  0    50   ~ 0
++5V
+Text Label 4025 1175 2    60   ~ 0
+A5(SCL)
+Text Label 4325 1175 0    50   ~ 0
++5V
+Text Notes 3825 700  0    50   ~ 0
+I2C pullups
+Wire Notes Line
+	4850 525  4850 1450
+Text Notes 5150 975  0    79   ~ 0
+Sensors\nCJMCU-811_(CCS811) --> WAK to GND\nGYBMEP (BME/BMP 280)
+Wire Notes Line
+	475  1800 3300 1800
+Wire Notes Line
+	3300 500  3300 7075
+Text Notes 3000 1675 2    79   ~ 0
+Input power
+Text Notes 1500 2025 0    79   ~ 0
+Connectors
+$Comp
+L Device:LED D1
+U 1 1 6001D504
+P 1825 1475
+F 0 "D1" H 1818 1691 50  0000 C CNN
+F 1 "LED" H 1818 1600 50  0000 C CNN
+F 2 "SamacSys_Parts:LTL2R3KGDEM" H 1825 1475 50  0001 C CNN
+F 3 "~" H 1825 1475 50  0001 C CNN
+	1    1825 1475
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 6001E134
+P 1975 1475
+F 0 "#PWR013" H 1975 1225 50  0001 C CNN
+F 1 "GND" H 1975 1325 50  0000 C CNN
+F 2 "" H 1975 1475 50  0000 C CNN
+F 3 "" H 1975 1475 50  0000 C CNN
+	1    1975 1475
+	0    -1   -1   0   
+$EndComp
+Text Label 1375 1475 2    79   ~ 0
++5V
+NoConn ~ 8225 2600
+NoConn ~ 8225 2700
+NoConn ~ 8225 2800
+NoConn ~ 9875 1600
+NoConn ~ 9875 1400
+NoConn ~ 8725 2000
+NoConn ~ 9875 2800
+NoConn ~ 9875 2900
+NoConn ~ 9875 3000
+NoConn ~ 7975 1800
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6005BE0D
+P 2725 1175
+F 0 "#FLG0101" H 2725 1250 50  0001 C CNN
+F 1 "PWR_FLAG" H 2725 1348 50  0000 C CNN
+F 2 "" H 2725 1175 50  0001 C CNN
+F 3 "~" H 2725 1175 50  0001 C CNN
+	1    2725 1175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1175 2725 1175
+Connection ~ 2725 1175
+Wire Wire Line
+	2725 1175 2800 1175
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60070CFB
+P 1300 975
+F 0 "#FLG0102" H 1300 1050 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 1148 50  0000 C CNN
+F 2 "" H 1300 975 50  0001 C CNN
+F 3 "~" H 1300 975 50  0001 C CNN
+	1    1300 975 
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 975 
+Wire Wire Line
+	1300 975  1425 975 
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 6007169D
+P 1800 4150
+F 0 "#FLG0103" H 1800 4225 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 4323 50  0000 C CNN
+F 2 "" H 1800 4150 50  0001 C CNN
+F 3 "~" H 1800 4150 50  0001 C CNN
+	1    1800 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 4150
+Wire Wire Line
+	1800 4150 1925 4150
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 6007207A
+P 1500 2500
+F 0 "#FLG0104" H 1500 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 1500 2673 50  0000 C CNN
+F 2 "" H 1500 2500 50  0001 C CNN
+F 3 "~" H 1500 2500 50  0001 C CNN
+	1    1500 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 2500
+Wire Wire Line
+	1500 2500 1450 2500
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 600725F9
+P 1775 5675
+F 0 "#FLG0105" H 1775 5750 50  0001 C CNN
+F 1 "PWR_FLAG" H 1775 5848 50  0000 C CNN
+F 2 "" H 1775 5675 50  0001 C CNN
+F 3 "~" H 1775 5675 50  0001 C CNN
+	1    1775 5675
+	1    0    0    -1  
+$EndComp
+Connection ~ 1775 5675
+Wire Wire Line
+	1775 5675 1975 5675
+$Comp
+L power:GND #PWR05
+U 1 1 5FE936C7
+P 6750 2050
+F 0 "#PWR05" H 6750 1800 50  0001 C CNN
+F 1 "GND" H 6750 1900 50  0000 C CNN
+F 2 "" H 6750 2050 50  0000 C CNN
+F 3 "" H 6750 2050 50  0000 C CNN
+	1    6750 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 601044A1
+P 6375 2150
+F 0 "J4" V 6247 2230 50  0000 L CNN
+F 1 "Sensor 5V power" V 6500 1850 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6375 2150 50  0001 C CNN
+F 3 "~" H 6375 2150 50  0001 C CNN
+	1    6375 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 60101423
+P 6375 1500
+F 0 "J3" V 6247 1580 50  0000 L CNN
+F 1 "Sensors i2c" V 6550 1250 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6375 1500 50  0001 C CNN
+F 3 "~" H 6375 1500 50  0001 C CNN
+	1    6375 1500
+	-1   0    0    1   
+$EndComp
+Text Label 6575 2150 0    50   ~ 0
++5V
+Wire Wire Line
+	6575 2150 6725 2150
+Text Label 6575 1500 0    60   ~ 0
+A4(SDA)
+Text Label 6600 1400 0    60   ~ 0
+A5(SCL)
+Wire Wire Line
+	6575 1500 6875 1500
+Wire Wire Line
+	6875 1400 6575 1400
+Wire Wire Line
+	6575 2050 6750 2050
+Wire Wire Line
+	1575 4150 1800 4150
+Wire Wire Line
+	1450 5675 1775 5675
+Wire Wire Line
+	1975 5675 1975 6500
+Wire Wire Line
+	1425 6500 1975 6500
+Wire Bus Line
+	3300 3450 3300 3100
+Wire Bus Line
+	4850 1250 4850 3450
+Wire Bus Line
+	3300 3450 4850 3450
+Connection ~ 4850 3450
+Wire Bus Line
+	4850 3450 7825 3450
+Wire Bus Line
+	3300 7100 3300 8050
+Wire Bus Line
+	3300 8050 3350 8050
+Wire Bus Line
+	3350 8050 3350 8025
+$Comp
+L UsbA:SS-52100-001 J8
+U 1 1 604ECA83
+P 1575 4450
+F 0 "J8" H 1817 3863 60  0000 C CNN
+F 1 "LED" H 1817 3969 60  0000 C CNN
+F 2 "SS-52100-001:SS-52100-001" H 1975 4190 60  0001 C CNN
+F 3 "" H 1575 4450 60  0000 C CNN
+	1    1575 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:IRF520NSTRLPBF Q2
+U 1 1 5FF64984
+P 2325 4450
+F 0 "Q2" H 2755 4596 50  0000 L CNN
+F 1 "IRL520NSTRLPBF" V 2900 4225 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2775 4400 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF520NS-DS-v01_00-EN.pdf?fileId=5546d46258fc0bc10158fee31fe50635" H 2775 4300 50  0001 L CNN
+F 4 "HEXFET N-Ch Power MOSFET 9.7A 100V D2PAK Infineon IRF520NSTRLPBF N-channel MOSFET Transistor, 9.7 A, 100 V, 3-Pin D2PAK" H 2775 4200 50  0001 L CNN "Description"
+F 5 "4" H 2775 4100 50  0001 L CNN "Height"
+F 6 "942-IRF520NSTRLPBF" H 2775 4000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Infineon-IR/IRF520NSTRLPBF?qs=9%252BKlkBgLFf3zOOMwLfNckA%3D%3D" H 2775 3900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Infineon" H 2775 3800 50  0001 L CNN "Manufacturer_Name"
+F 9 "IRF520NSTRLPBF" H 2775 3700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2325 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L UsbA:SS-52100-001 J6
+U 1 1 6050B127
+P 1450 5975
+F 0 "J6" H 1692 5388 60  0000 C CNN
+F 1 "FAN 2" H 1692 5494 60  0000 C CNN
+F 2 "SS-52100-001:SS-52100-001" H 1850 5715 60  0001 C CNN
+F 3 "" H 1450 5975 60  0000 C CNN
+	1    1450 5975
+	-1   0    0    1   
+$EndComp
+$Comp
+L UsbA:SS-52100-001 J5
+U 1 1 6050E014
+P 1425 6800
+F 0 "J5" H 1667 6213 60  0000 C CNN
+F 1 "FAN 1" H 1667 6319 60  0000 C CNN
+F 2 "SS-52100-001:SS-52100-001" H 1825 6540 60  0001 C CNN
+F 3 "" H 1425 6800 60  0000 C CNN
+	1    1425 6800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1675 6800 1425 6800
+Text Label 1625 6800 2    50   ~ 0
++5V
+Wire Wire Line
+	1700 5975 1450 5975
+Text Label 1650 5975 2    50   ~ 0
++5V
+NoConn ~ 1575 4250
+NoConn ~ 1575 4350
+NoConn ~ 1450 5775
+NoConn ~ 1450 5875
+NoConn ~ 1425 6600
+NoConn ~ 1425 6700
+$Comp
+L UsbA:SS-52100-001 J7
+U 1 1 60524719
+P 2650 1175
+F 0 "J7" H 3178 1078 60  0000 L CNN
+F 1 "Input power" H 2725 1350 60  0000 L CNN
+F 2 "SS-52100-001:SS-52100-001" H 3050 915 60  0001 C CNN
+F 3 "" H 2650 1175 60  0000 C CNN
+	1    2650 1175
+	-1   0    0    1   
+$EndComp
+Text Label 8725 1700 2    60   ~ 0
+IOREF
+NoConn ~ 8675 1700
+NoConn ~ 8725 1600
+NoConn ~ 8475 1900
+$Comp
+L Device:R R5
+U 1 1 5FFF8F7B
+P 4175 1175
+F 0 "R5" V 4275 1200 50  0000 L CNN
+F 1 "2k7" V 4275 1050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4105 1175 50  0001 C CNN
+F 3 "~" H 4175 1175 50  0001 C CNN
+	1    4175 1175
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 6055E4D7
+P 1525 1475
+F 0 "R6" V 1625 1500 50  0000 L CNN
+F 1 "100" V 1625 1350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1455 1475 50  0001 C CNN
+F 3 "~" H 1525 1475 50  0001 C CNN
+	1    1525 1475
+	0    1    1    0   
+$EndComp
+NoConn ~ 8725 2300
+NoConn ~ 9525 1200
+NoConn ~ 9525 1300
+$EndSCHEMATC

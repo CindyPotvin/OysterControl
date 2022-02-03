@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name TemperatureLogger)(type Legacy)(uri Z:/Electronique/OysterControl/OysterControl/TemperatureLogger_ESP-12F-rescue.lib)(options "")(descr ""))
+  (lib (name UsbA)(type Legacy)(uri Z:/Electronique/OysterControl/OysterControl/SS-52100-001.lib)(options "")(descr ""))
+)
